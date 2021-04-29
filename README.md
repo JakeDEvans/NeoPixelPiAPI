@@ -20,3 +20,9 @@ curl -k -X POST https://localhost:8443/color?led=2\&red=0\&green=0\&blue=255
 ```
 curl -k -X POST https://localhost:8443/clear
 ```
+
+
+### set led 9 to white using json
+```
+curl -k -X POST -d '{"led":9,"red":255,"green":255,"blue":255}' -H 'Content-Type: application/json'  https://localhost:8443/json
+```
